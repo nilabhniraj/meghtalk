@@ -1,0 +1,28 @@
+.footer {
+  background: #020617;
+  color: #cbd5f5;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.footer-column-title {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-column-title div {
+  cursor: pointer;
+}

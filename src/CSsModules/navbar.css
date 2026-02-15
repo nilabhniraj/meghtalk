@@ -1,0 +1,152 @@
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: rgba(9, 9, 9, 0.492);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+.navbar-base {
+  background: linear-gradient(172deg, rgb(12 20 38), rgb(115 117 126));
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #e5e7eb;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.navbar-link-button {
+  background: none;
+  border-bottom: 2px solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 5px 10px;
+}
+
+.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 0.75rem;
+  min-width: 220px;
+  z-index: 200;
+  transform: translateY(100%);
+}
+
+.navbar-primary {
+  background: #38bdf8;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: none;
+}
+
+.navbar-secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  padding: 1.5rem 3rem;
+  color: #38bdf8;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  font-size: large;
+}
+
+.navbar-secondary:hover {
+  background: #38bdf8;
+  color: #ffffff;
+}
+.navbar-menu {
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
+}
+
+.navbar-dropdown:hover .navbar-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(100%);
+}
+.navbar-link:hover,
+.navbar-link-button:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ff4400;
+}
+
+.navbar-products-List {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0.25rem;
+  min-width: 220px;
+  z-index: 200;
+  display: none;
+  border-radius: 3px;
+  width: max-content;
+  background: linear-gradient(172deg, rgb(12 20 38), rgb(115 117 126));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 10px;
+  box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.5);
+}
+.navbar-products-List li {
+  margin-bottom: 0.8rem;
+  list-style-type: none;
+  text-align: left;
+  cursor: pointer;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  gap: 10px;
+}
+.navbar-products-List ul {
+  margin: 0;
+  padding: 2em;
+  background: transparent;
+}
+#Products:hover .navbar-products-List {
+  display: block;
+}
+.navbar-products-List:hover {
+  display: block;
+}
+
+#Solutions:hover #SolutionsList {
+  display: block;
+}
